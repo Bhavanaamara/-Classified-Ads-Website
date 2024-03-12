@@ -1,0 +1,80 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header,footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+  
+  #search {
+    text-align: center;
+  }
+  
+  #ads {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ad {
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  #Laptop{
+    height: 25%;
+    width: 25%;
+  }
+  #Car{
+    height: 30%;
+    width: 30%;
+  }
+  #Jacket{
+    height: 20%;
+    width: 20%;
+  }
+   /* Example of CSS media queries */
+/* For smaller screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+    /* CSS rules for small screens */
+  }
+  
+  /* For medium-sized screens (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* CSS rules for medium-sized screens */
+  }
+  
+  /* For larger screens (desktops) */
+  @media only screen and (min-width: 1025px) {
+    /* CSS rules for large screens */
+  }

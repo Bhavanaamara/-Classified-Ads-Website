@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classified Ads</title>
+  <link rel="stylesheet" href="Classified Ads Website.css">
+</head>
+<body>
+  <header>
+    <h1>Classified Ads</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" id="allCategoriesLink" onclick="filterAdsByCategory('all')">All Categories</a></li>
+        <li><a href="#">My Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="search">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+  </section>
+  <section id="categories">
+    <h2>Categories</h2>
+    <ul id="categoryList">
+      <li><a href="#" onclick="filterAdsByCategory('electronics')">Electronics</a></li>
+      <li><a href="#" onclick="filterAdsByCategory('clothing')">Clothing</a></li>
+      <li><a href="#" onclick="filterAdsByCategory('vehicles')">Vehicles</a></li>
+      <div class="image-container">
+        <img id="Laptop" src="https://m.media-amazon.com/images/I/61Qe0euJJZL.jpg" alt="Laptop">
+      </div>
+      <div class="image-container">
+        <img id="Car" src="https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80.jpg" alt="Car">
+      </div>
+      <div class="image-container">
+        <img id="Jacket" src="https://4.imimg.com/data4/RU/VC/MY-11853389/men-s-jackets.jpg" alt="Jacket">
+      </div>
+      <button onclick="changeImages()">Change Images</button>
+      <!-- Add more categories as needed -->
+    </ul>
+  </section>
+  <section id="ads">
+    <!-- Ads will be dynamically added here -->
+  </section>
+  <footer>
+    <p>&copy; 2024 Classified Ads</p>
+  </footer>
+  <script src="Classified Ads Website.js"></script>
+</body>
+</html>
